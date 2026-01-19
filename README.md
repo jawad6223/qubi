@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Qubitars Header & Footer Project
+
+A minimal Next.js project containing only the Navbar (Header) and Footer components from Qubitars Technologies.
+
+## Features
+
+- ✅ Clean, minimal Navbar with mobile menu
+- ✅ Professional Footer with contact information
+- ✅ Responsive design
+- ✅ Top navigation bar with contact info and social links
+- ✅ Mobile-friendly hamburger menu
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── layout.tsx      # Root layout with Navbar & Footer
+│   ├── page.tsx        # Home page
+│   └── globals.css      # Global styles
+├── components/
+│   └── layout/
+│       ├── navbar/     # Navbar component
+│       ├── footer/      # Footer component
+│       └── topNav/      # Top navigation bar
+├── lib/
+│   └── assets/
+│       ├── icons/       # SVG icons
+│       └── images/      # Image exports
+└── styles/
+    └── style.ts         # Style utilities
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Navbar
+- Sticky header
+- Desktop and mobile navigation
+- Logo
+- Contact button
+- Mobile hamburger menu
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Footer
+- Contact information (Texas & Gujranwala)
+- Quick links
+- Social media links
+- Copyright information
 
-## Deploy on Vercel
+## Technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- Lucide React (icons)
+- Country Flag Icons
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+Private - Qubitars Technologies

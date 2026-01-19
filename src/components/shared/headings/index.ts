@@ -1,2 +1,0 @@
-export { SectionHeading } from './headings';
-
