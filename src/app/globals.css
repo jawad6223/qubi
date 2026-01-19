@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3490dc;
+  --color-secondary: #ff6f61;
+  --color-accent: #FC7E13;
+  --color-lightGray: #f3f4f6;
+  --color-darkGray: #2d2d2d;
+  --color-black: #1A1A1A;
+  --color-blackish: #3F3F41;
+  --color-blue: #1E274F;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-dm-sans: var(--font-dm-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: white;
+  color: var(--foreground);
+  font-family: var(--font-dm-sans), sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-satoshi {
+  font-family: var(--font-satoshi);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.font-fjalla-one {
+  font-family: var(--font-fjalla-one), sans-serif;
+}
+
+.font-bebas-neue {
+  font-family: var(--font-bebas-neue), sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
+@media (min-width: 1440px) {
+  .bottom-1440-11 {
+    bottom: 2.20rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mx-1600-312 {
+    margin-left: 312px !important;
+    margin-right: 312px !important;
+  }
+}
+
+/* CUSTOM CSS */
+/*----------------------------------------
+  CUSTOM CSS
+----------------------------------------*/
+
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-240%);
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-180%);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-120%);
+    }
+  }
+}
+
+.slider-equal-height {
+  overflow: visible !important;
+}
+
+.slider-equal-height .slick-list {
+  overflow: visible !important;
+}
+
+.slider-equal-height .slick-track {
+  display: flex !important;
+}
+
+.slider-equal-height .slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+
+.slider-equal-height .slick-slide > div {
+  height: 100%;
+  display: flex;
+}
+
+.vertical-text-rotated {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: 0.15em;
+}
+
+.testimonial-slider .slick-slide {
+  transition: all 0.3s ease;
+}
+
+.testimonial-slider .slick-list {
+  padding: 20px 0 !important;
+  overflow: visible !important;
+}
+
+.testimonial-slider .slick-track {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+@media (max-width: 768px) {
+  .testimonial-slider .slick-slide > div {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+}
+
+.our-client-slider .slick-dots {
+  bottom: -30px !important;
+  position: relative !important;
+}
+
+.our-client-slider .slick-dots li button:before {
+  color: #D9D9D9 !important;
+  opacity: 0.3 !important;
+  font-size: 14px !important;
+}
+
+.our-client-slider .slick-dots li.slick-active button:before {
+  color: #FC7E13 !important;
+  opacity: 1 !important;
+  font-size: 14px !important;
+}
+
+.testimonial-text-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 640px) {
+  .service-bg {
+    background-size: 160px auto;      /* adjust image size */
+    background-position: center bottom; /* better for mobile */
+  }
+}
+/* @media (max-width: 640px) {
+  .service-bg {
+    padding-bottom: 120px;
+  }
+} */
