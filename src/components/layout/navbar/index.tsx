@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { navbarImages, homeImages } from "@/lib/assets/images";
+import { navbarImages } from "@/lib/assets/images";
 import { ChevronDown, Menu, MoveRight, MoveUpRight, X } from "lucide-react";
 import { Button } from "@/components/shared/ui";
 import TopNav from "@/components/layout/topNav";
@@ -33,9 +33,9 @@ const Navbar = () => {
       <div className="mx-4 lg:mx-7 xl:mx-16 mx-1700-260">
         <div ref={headerRef} className={combine(styles.flexBetween, "py-3 md:py-2")}>
           {/* Logo */}
-          <Link href="/">
+          <Link href="/about">
             <Image
-              src="/assets/images/home/logo3.png"
+              src={navbarImages.logoSvg}
               alt="Qubitars Technology Logo"
               width={450}
               height={120}

@@ -1,7 +1,7 @@
 import React from "react";
 import Icons from "@/lib/assets/icons";
 import { ChartNoAxesCombined, MapPin, Atom, Diameter, HeartPlus, GraduationCap, Rocket, LandPlot, Users, Handshake, ThumbsUp, Linkedin, Facebook, Instagram, Plug, Users2, UserPlus } from "lucide-react";
-import { navbarImages, industriesImages, companyImages } from "@/lib/assets/images";
+import { navbarImages } from "@/lib/assets/images";
 import { CapabilitiesDropdown } from "@/components/layout/dropdowns/CapabilitiesDropdown";
 import { IndustriesDropdown } from "@/components/layout/dropdowns/IndustriesDropdown";
 import { CompanyDropdown } from "@/components/layout/dropdowns/CompanyDropdown";
@@ -130,25 +130,7 @@ export const industries: Industry[] = [
     description: "We empower real estate professionals with smart digital solutions—streamlining property management, simplifying transactions, and enhancing customer journeys from search to close.",
     title: "Real Estate Solutions",
     hasSpecialContent: true,
-    companies: [
-      { id: "1", name: "Deal Closer", image: industriesImages.clogo1, alt: "Deal Closer" },
-      { id: "2", name: "Cash Flow", image: industriesImages.clogo2, alt: "Cash Flow" },
-      { id: "3", name: "Republic", image: industriesImages.clogo3, alt: "Republic" },
-      { id: "4", name: "Roofing", image: industriesImages.clogo4, alt: "Roofing" },
-      { id: "6", name: "Qubitarsweb", image: industriesImages.clogo6, alt: "Qubitarsweb" },
-      { id: "7", name: "Qubitarsweb", image: industriesImages.clogo7, alt: "Qubitarsweb" },
-      { id: "8", name: "Qubitarsweb", image: industriesImages.clogo8, alt: "Qubitarsweb" },
-      { id: "9", name: "Qubitarsweb", image: industriesImages.clogo9, alt: "Qubitarsweb" },
-      { id: "10", name: "Qubitarsweb", image: industriesImages.clogo10, alt: "Qubitarsweb" },
-      { id: "11", name: "Qubitarsweb", image: industriesImages.clogo11, alt: "Qubitarsweb" },
-      { id: "12", name: "Qubitarsweb", image: industriesImages.clogo12, alt: "Qubitarsweb" },
-      { id: "13", name: "Qubitarsweb", image: industriesImages.clogo13, alt: "Qubitarsweb" },
-      { id: "14", name: "Qubitarsweb", image: industriesImages.clogo14, alt: "Qubitarsweb" },
-      { id: "15", name: "Qubitarsweb", image: industriesImages.clogo15, alt: "Qubitarsweb" },
-      { id: "16", name: "Qubitarsweb", image: industriesImages.clogo16, alt: "Qubitarsweb" },
-      { id: "17", name: "Qubitarsweb", image: industriesImages.clogo17, alt: "Qubitarsweb" },
-      { id: "18", name: "Qubitarsweb", image: industriesImages.clogo18, alt: "Qubitarsweb" },
-    ],
+    companies: [],
     testimonials: [
       {
         id: "jake-peters",
@@ -156,7 +138,7 @@ export const industries: Industry[] = [
         author: "Jake Peters",
         position: "CEO & CO-Founder",
         company: "PayPerks",
-        avatar: industriesImages.man,
+        avatar: "",
       },
     ],
   },
@@ -234,9 +216,6 @@ export const companyData: CompanyDataItem[] = [
   { type: "insideQubitarsLink", id: "life-at-qubitars", label: "Life at Qubitars", href: "/" },
   { type: "careersLink", id: "fresh-graduates", label: "Fresh Graduates", href: "/" },
   { type: "careersLink", id: "open-positions", label: "Open Positions", href: "/" },
-  { type: "blogPost", id: "blog-1", image: companyImages.blog1, alt: "Blog 1", title: "Adaptive Learning for Neurodivergent Students" },
-  { type: "blogPost", id: "blog-2", image: companyImages.blog2, alt: "Blog 2", title: "Adaptive Learning for Neurodivergent Students" },
-  { type: "blogPost", id: "blog-3", image: companyImages.blog3, alt: "Blog 3", title: "Adaptive Learning for Neurodivergent Students" },
   { type: "socialLink", id: "linkedin", name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/qubitars" },
   { type: "socialLink", id: "facebook", name: "Facebook", icon: Facebook, href: "https://www.facebook.com/qubitars" },
   { type: "socialLink", id: "instagram", name: "Instagram", icon: Instagram, href: "https://www.instagram.com/qubitars" },
@@ -282,7 +261,7 @@ export const engagementData: EngagementDataItem[] = [
     type: "testimonial",
     id: "testimonial-1",
     quote: "Qubitars Technologies partnered with Travelliance (TVA) to develop Accounting, Reporting, & Operations solutions. We helped cut downtime to zero, providing 24/7 support, and making sure their database of 7 millionusers functions smoothly.",
-    clientAvatar: companyImages.jake,
+    clientAvatar: "",
     clientName: "Dori Hotoran",
     clientTitle: "Director Global Operations - Travelliance",
   },
@@ -290,7 +269,7 @@ export const engagementData: EngagementDataItem[] = [
     type: "testimonial",
     id: "testimonial-2",
     quote: "Qubitars has been instrumental in our digital transformation journey. Their expertise and dedication to our success is unmatched.",
-    clientAvatar: companyImages.jake,
+    clientAvatar: "",
     clientName: "Sarah Mitchell",
     clientTitle: "CTO - TechCorp Solutions",
   },
@@ -298,7 +277,7 @@ export const engagementData: EngagementDataItem[] = [
     type: "testimonial",
     id: "testimonial-3",
     quote: "Working with Qubitars transformed our business operations. They delivered beyond our expectations and became a true partner in our growth.",
-    clientAvatar: companyImages.jake,
+    clientAvatar: "",
     clientName: "Michael Chen",
     clientTitle: "VP of Technology - InnovateNow",
   },

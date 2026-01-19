@@ -6,15 +6,6 @@ import { SectionHeading } from "@/components/shared/headings/headings";
 const Awards = () => {
   return (
     <section className={`${styles.sectionPaddingY} bg-[#EDEFF880] relative overflow-hidden`}>
-      <div className="absolute bottom-0 left-0 right-0 w-full h-[260px] md:h-[300px] lg:h-[330px] pointer-events-none">
-        <Image
-          src="/assets/images/generals/awards/map.png"
-          alt=""
-          fill
-          className=""
-          unoptimized
-        />
-      </div>
       
       <div className={`${styles.sectionPadding} relative z-10`}>
             <SectionHeading

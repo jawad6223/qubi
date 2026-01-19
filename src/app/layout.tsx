@@ -61,9 +61,9 @@ const satoshi = localFont({
   preload: true,
 });
 
-import { homeMetadata } from "@/lib/metadata";
+import { baseMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = homeMetadata;
+export const metadata: Metadata = baseMetadata;
 
 export default function RootLayout({
   children,
